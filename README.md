@@ -8,6 +8,9 @@
 #> .libPaths()
 #[1] "/nethome/axy148/R/lib64/R/library"
 
+source("https://bioconductor.org/biocLite.R")
+biocLite(‘ChIPseeker’, ‘ChIPpeakAnno’, ‘DiffBind’, ‘LOLA’, ‘Vennerable’)
+
 library(devtools)
 install_github("aiminy/ChipSeq")
 
